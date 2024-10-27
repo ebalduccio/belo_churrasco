@@ -1,9 +1,8 @@
 'use client'
 
-import { Instagram, Facebook, Twitter, MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
+import { Instagram, Facebook, Twitter, MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Button } from "@/components/ui/button";
 
 const footerLinks = {
     menu: [
@@ -169,7 +168,7 @@ export const Footer = () => {
 
                 {/* Copyright */}
                 <div className="text-center text-orange-400 text-sm mt-12 pt-8 border-t border-orange-800">
-                    <p>© 2024 Bello's Churrasco. Todos os direitos reservados.</p>
+                    <p>© 2024 Bello&apos;s Churrasco. Todos os direitos reservados.</p>
                 </div>
             </div>
         </footer>
