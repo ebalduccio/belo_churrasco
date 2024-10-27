@@ -31,8 +31,6 @@ interface Stat {
     label: string;
 }
 
-interface TestimonialCardProps extends Testimonial { }
-
 interface GalleryImageProps {
     url: string;
     title: string;
