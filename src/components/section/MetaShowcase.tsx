@@ -6,6 +6,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Flame, Star, Clock, Info } from 'lucide-react';
+import Image from 'next/image';
 
 // Dados expandidos das carnes
 const meats = [
@@ -112,11 +113,17 @@ const MeatCard: React.FC<MeatCardProps> = ({
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.3 }}
                 >
-                    <img
-                        src={image}
-                        alt={name}
-                        className="w-full h-64 object-cover rounded-lg shadow-md"
-                    />
+                    <div className="relative w-full h-64">
+                        <Image
+                            src={image}
+                            alt={name}
+                            fill
+                            className="object-cover rounded-lg shadow-md"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority={false}
+                            quality={85}
+                        />
+                    </div>
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
                         <div className="flex items-center gap-4 text-white">
                             <div className="flex items-center gap-2">

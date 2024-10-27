@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote, Camera, MapPin, Calendar, Users, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -88,7 +88,7 @@ const stats: Stat[] = [
     { icon: <Calendar className="w-6 h-6" />, value: '15+', label: 'Anos de Experiência' },
 ];
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({
+const TestimonialCard: React.FC<Testimonial> = ({
     name,
     role,
     image,

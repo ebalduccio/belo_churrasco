@@ -22,8 +22,6 @@ export const HeroSection: React.FC = () => {
     const { scrollY } = useScroll();
     const y = useTransform(scrollY, [0, 500], [0, 250]);
 
-    const y1: MotionValue<number> = useTransform(scrollY, [0, 1000], [0, 300]);
-    const y2: MotionValue<number> = useTransform(scrollY, [0, 1000], [0, 200]);
     const logoScale: MotionValue<number> = useTransform(scrollY, [0, 300], [1, 0.8]);
     const titleOpacity: MotionValue<number> = useTransform(scrollY, [0, 300], [1, 0.3]);
 
@@ -151,7 +149,7 @@ export const HeroSection: React.FC = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1, delay: 0.3 }}
                     >
-                        Bello's Churrasco
+                        Bello&apos;s Churrasco
                     </motion.h1>
 
                     <motion.p
